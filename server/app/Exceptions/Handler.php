@@ -37,4 +37,22 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function render($request, Throwable $exception)
+    {
+        if ($exception instanceof DomainNotAllowedException) {
+            abort(405, $exception->getMessage());
+        }
+        if ($exception instanceof EmailAlreadyExistsException) {
+            abort(405, $exception->getMessage());
+        }
+        if ($exception instanceof IncorrectCodeException) {
+            abort(405, $exception->getMessage());
+        }
+        if ($exception instanceof AlreadyConfirmedException) {
+            abort(405, $exception->getMessage());
+        }
+
+        return parent::render($request, $exception);
+    }
 }
