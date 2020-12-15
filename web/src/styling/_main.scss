@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    background-color: #071443;
+    color: #ffffff;
+}
+
+#root {
+    &>div {
+      overflow: hidden;
+    }
+}
+
+section {
+    width: calc(100% - 6rem);
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainComponent {
+    position: relative;
+}

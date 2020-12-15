@@ -1,0 +1,42 @@
+$breakpoints-map: (
+    xxxs: 20em,
+    xxs: 30em,
+    xs: 40em,
+    sm: 50em,
+    md: 60em,
+    lg: 70em,
+    xl: 80em,
+    xxl: 90em
+);
+
+/* =============================================================================
+  MIXIN: RESPOND-TO-MIN
+  USEAGE: @include respond-to-min(sm) { ... }
+============================================================================= */
+
+@mixin respond-to-min($breakpoint) {
+    @if map-has-key($breakpoints-map, $breakpoint) {
+        @media screen and (min-width: #{map-get($breakpoints-map, $breakpoint)}) {
+            @content;
+        }
+    } @else {
+        @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+        + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+}
+
+/* =============================================================================
+  MIXIN: RESPOND-TO-MAX
+  USEAGE: @include respond-to-max(small) { ... }
+============================================================================= */
+
+@mixin respond-to-max($breakpoint) {
+    @if map-has-key($breakpoints-map, $breakpoint) {
+        @media screen and (max-width: #{map-get($breakpoints-map, $breakpoint)}) {
+            @content;
+        }
+    } @else {
+        @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+        + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+}

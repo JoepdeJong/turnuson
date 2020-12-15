@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: thin;
+    font-weight: 200;
+    src: url('../assets/fonts/OpenSans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: bold;
+    font-weight: 700;
+    src: url('../assets/fonts/OpenSans/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    font-style: thin;
+    font-weight: 200;
+    src: url('../assets/fonts/FuturaStd/FuturaStd-Light.otf');
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/FuturaStd/FuturaStd-Book.otf');
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    font-style: bold;
+    font-weight: 700;
+    src: url('../assets/fonts/FuturaStd/FuturaStd-Heavy.otf');
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../assets/fonts/FuturaStd/FuturaStd-MediumOblique.otf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/MyriadPro-Regular.otf');
+}
+
+//TODO:futura light
+
+body {
+    font-family: 'Myriad Pro';
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Futura Std', 'Helvetica';
+    font-weight: 400;
+}
+h2, h3 {
+    font-weight: 400;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+    z-index: 1;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6em;
+}
+
+h4 {
+    font-family: 'Futura Std';
+    font-weight: 700;
+    margin-bottom: 0px;
+    &+p{
+        margin-top: 0px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    padding: 16px;
+    // margin-top: 32px;
+
+    @include respond-to-max(md) {
+        font-size: 26px;
+        padding: 8px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+}
