@@ -18,6 +18,31 @@
     mso-table-rspace: 0pt;
     mso-table-lspace: 0pt;
   }
+  /**
+   * Better fluid images in Internet Explorer.
+   */
+  img {
+    -ms-interpolation-mode: bicubic;
+  }
+
+  /**
+   * Remove blue links for iOS devices.
+   */
+  a[x-apple-data-detectors] {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /**
+   * Fix centering issues in Android 4.4.
+   */
+  div[style*="margin: 16px 0;"] {
+    margin: 0 !important;
+  }
   body {
     width: 100% !important;
     height: 100% !important;
@@ -30,6 +55,13 @@
 
   a {
     color: #1a82e2;
+  }
+  img {
+    height: auto;
+    line-height: 100%;
+    text-decoration: none;
+    border: 0;
+    outline: none;
   }
   </style>
 
@@ -49,7 +81,7 @@
         <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
           <tr>
             <td align="center" valign="top" style="padding: 36px 0px 0px 0px;">
-              <a href="https://turnuson.nl" target="_blank" style="display: inline-block;">
+              <a href="https://turnuson.nl/{{$code}}" target="_blank" style="display: inline-block;">
                 <img src="{{ $message->embed('storage/turn-us-on-mail-header.png') }}" alt="Turn us ON logo with Christmas trees" style="max-width: 100%">
                 {{-- <img src="{{ asset('storage/turn-us-on-mail-header.png') }}" alt="Turn us ON logo with Christmas trees" style="max-width: 100%"/> --}}
               </a>
@@ -106,7 +138,7 @@
                     <table border="0" cellpadding="0" cellspacing="0">
                       <tr>
                         <td align="center" bgcolor="#071443" style="border-radius: 6px;">
-                          <a href="https://turnuson.nl/" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Confirm</a>
+                          <a href="https://turnuson.nl/{{$code}}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Confirm</a>
                         </td>
                       </tr>
                     </table>
@@ -118,7 +150,7 @@
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
               <p style="margin: 0;">If that doesn't work, copy and paste the following link in your browser:</p>
-              <p style="margin: 0;"><a href="https://turnuson.nl/" target="_blank">https://turnuson.nl/</a></p>
+              <p style="margin: 0;"><a href="https://turnuson.nl/{{$code}}" target="_blank">https://turnuson.nl/{{$code}}</a></p>
             </td>
           </tr>
 
