@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Exceptions\AlreadyConfirmedException;
 use App\Exceptions\DomainNotAllowedException;
 use App\Exceptions\EmailAlreadyExistsException;
+use App\Exceptions\EmailFormatNotAllowedException;
 use App\Exceptions\IncorrectCodeException;
 use App\Http\Requests\ConfirmVisitorRequest;
 use App\Http\Requests\RegisterVisiterRequest;
@@ -31,15 +32,19 @@ class VisitorController extends Controller
     }
 
     public function validateEmail($email){
-        $domain = explode("@", $email)[1];
-        $whitelist = ['tudelft.nl', 'student.tudelft.nl', 'hhs.nl', 'student.hhs.nl'];
-        if(!in_array($domain, $whitelist)){
-            throw new DomainNotAllowedException('The given email domain is not allowed.', 405);
+        // $domain = explode("@", $email)[1];
+        // $whitelist = ['tudelft.nl', 'student.tudelft.nl', 'hhs.nl', 'student.hhs.nl'];
+        // if(!in_array($domain, $whitelist)){
+        //     throw new DomainNotAllowedException('The given email domain is not allowed.', 405);
+        // }
+
+        if(strpos("+", $email) !== false){
+            throw new EmailFormatNotAllowedException('The given email does not match the required format.', 405);
         }
 
         $visitor = Visitor::where('email', $email)->first();
         if($visitor){
-            throw new EmailAlreadyExistsException('The given email address is already known in the system, check your email to confirm!', 405);
+            throw new EmailAlreadyExistsException('The given email address is already known in the system, it can take a few minutes before you receive the email.. Check also your spambox.', 405);
         }
     }
 

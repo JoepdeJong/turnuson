@@ -9,7 +9,7 @@ const TurnMeOn = () => {
 
     const sendConfirmation = () => {
         api.post('/register', {email}).then( res => {
-            toast.success('📧 Check your email!')
+            toast.success('📧 Check your email! (And your spam)')
             // participant = res.data.data.uuid
             // window.localStorage.setItem('participant', participant)
         }).catch(err => {
@@ -27,10 +27,10 @@ const TurnMeOn = () => {
                     :
                     <>
                     <div className="Form">
-                        <input type="email" placeholder="email@student.tudelft.nl*" onChange={(e) => setEmail(e.target.value)}/>
+                        <input type="email" placeholder="me@example.com" onChange={(e) => setEmail(e.target.value)}/>
                         <div className="Button" onClick={() => sendConfirmation()}>Send confirmation email</div>
                     </div>
-                    <small>* Only mails with the domains @tudelft.nl, @student.tudelft.nl, @hhs.nl and @student.hhs.nl are allowed.</small>
+                    {/* <small>* Only mails with the domains @tudelft.nl, @student.tudelft.nl, @hhs.nl and @student.hhs.nl are allowed.</small> */}
                     </>
 
                 }

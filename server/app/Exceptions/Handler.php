@@ -52,6 +52,9 @@ class Handler extends ExceptionHandler
         if ($exception instanceof AlreadyConfirmedException) {
             abort(405, $exception->getMessage());
         }
+        if ($exception instanceof EmailFormatNotAllowedException) {
+            abort(405, $exception->getMessage());
+        }
 
         return parent::render($request, $exception);
     }

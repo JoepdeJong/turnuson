@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://turnuson.nl/precache-manifest.93d17d392f4a0038727ad72b9420af07.js"
+  "https://turnuson.nl/precache-manifest.40d94b8aa91d616548e47d90ff454428.js"
 );
 
 self.addEventListener('message', (event) => {
