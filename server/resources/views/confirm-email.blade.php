@@ -125,8 +125,7 @@
           <tr>
             <td align="center" valign="top" style="padding: 36px 0px 0px 0px;">
               <a href="https://sendgrid.com" target="_blank" style="display: inline-block;">
-                <img src="{{ $message->embed('storage/turn-us-on-mail-header.png') }}">
-                {{-- <img src="{{ asset('storage/turn-us-on-mail-header.png') }}" style="max-width: 100%"/> --}}
+                <img src="{{ asset('storage/turn-us-on-mail-header.png') }}" style="max-width: 100%"/>
               </a>
             </td>
           </tr>
