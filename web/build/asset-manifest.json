@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://turnuson.nl/static/css/main.cf8209ba.chunk.css",
+    "main.css": "https://turnuson.nl/static/css/main.c71659d2.chunk.css",
     "main.js": "https://turnuson.nl/static/js/main.a132e88b.chunk.js",
     "main.js.map": "https://turnuson.nl/static/js/main.a132e88b.chunk.js.map",
     "runtime-main.js": "https://turnuson.nl/static/js/runtime-main.6b46b127.js",
@@ -9,10 +9,10 @@
     "static/js/2.78c046c5.chunk.js": "https://turnuson.nl/static/js/2.78c046c5.chunk.js",
     "static/js/2.78c046c5.chunk.js.map": "https://turnuson.nl/static/js/2.78c046c5.chunk.js.map",
     "index.html": "https://turnuson.nl/index.html",
-    "precache-manifest.3497058a796c2532148b9991214f67e5.js": "https://turnuson.nl/precache-manifest.3497058a796c2532148b9991214f67e5.js",
+    "precache-manifest.93d17d392f4a0038727ad72b9420af07.js": "https://turnuson.nl/precache-manifest.93d17d392f4a0038727ad72b9420af07.js",
     "service-worker.js": "https://turnuson.nl/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "https://turnuson.nl/static/css/2.d34346ea.chunk.css.map",
-    "static/css/main.cf8209ba.chunk.css.map": "https://turnuson.nl/static/css/main.cf8209ba.chunk.css.map",
+    "static/css/main.c71659d2.chunk.css.map": "https://turnuson.nl/static/css/main.c71659d2.chunk.css.map",
     "static/js/2.78c046c5.chunk.js.LICENSE.txt": "https://turnuson.nl/static/js/2.78c046c5.chunk.js.LICENSE.txt",
     "static/media/entry.scss": "https://turnuson.nl/static/media/OpenSans-SemiBold.ba5cde21.ttf",
     "static/media/kerstboom.png": "https://turnuson.nl/static/media/kerstboom.f5cec279.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.6b46b127.js",
     "static/css/2.d34346ea.chunk.css",
     "static/js/2.78c046c5.chunk.js",
-    "static/css/main.cf8209ba.chunk.css",
+    "static/css/main.c71659d2.chunk.css",
     "static/js/main.a132e88b.chunk.js"
   ]
 }
