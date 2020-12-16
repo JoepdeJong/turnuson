@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd1bea523f1c3ea303737f381bd45180",
+    "revision": "f958c82ef922a0ef222733091f698a43",
     "url": "https://turnuson.nl/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://turnuson.nl/static/css/2.d34346ea.chunk.css"
   },
   {
-    "revision": "333501ea1780fd6dab1e",
-    "url": "https://turnuson.nl/static/css/main.e690661d.chunk.css"
+    "revision": "f45d886d818867e7cd82",
+    "url": "https://turnuson.nl/static/css/main.716c6800.chunk.css"
   },
   {
     "revision": "9f33576ed12d37980128",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://turnuson.nl/static/js/2.fad19e55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "333501ea1780fd6dab1e",
+    "revision": "f45d886d818867e7cd82",
     "url": "https://turnuson.nl/static/js/main.ea6faa3d.chunk.js"
   },
   {
