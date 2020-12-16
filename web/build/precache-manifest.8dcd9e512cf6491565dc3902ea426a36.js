@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4fa7ee54c422065efce7a4c0e23347a",
+    "revision": "b375dd18b05b1ead18196117310d160f",
     "url": "https://turnuson.nl/index.html"
   },
   {
-    "revision": "b8efa0ee20056cab3cfa",
+    "revision": "9f33576ed12d37980128",
     "url": "https://turnuson.nl/static/css/2.d34346ea.chunk.css"
   },
   {
-    "revision": "b869bcf1383fc306783f",
-    "url": "https://turnuson.nl/static/css/main.c71659d2.chunk.css"
+    "revision": "6bae17608900a58f7014",
+    "url": "https://turnuson.nl/static/css/main.e690661d.chunk.css"
   },
   {
-    "revision": "b8efa0ee20056cab3cfa",
-    "url": "https://turnuson.nl/static/js/2.78c046c5.chunk.js"
+    "revision": "9f33576ed12d37980128",
+    "url": "https://turnuson.nl/static/js/2.fad19e55.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "https://turnuson.nl/static/js/2.78c046c5.chunk.js.LICENSE.txt"
+    "url": "https://turnuson.nl/static/js/2.fad19e55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b869bcf1383fc306783f",
-    "url": "https://turnuson.nl/static/js/main.ef5af422.chunk.js"
+    "revision": "6bae17608900a58f7014",
+    "url": "https://turnuson.nl/static/js/main.41c0e1f0.chunk.js"
   },
   {
     "revision": "9af3f66ae8c82f682e06",

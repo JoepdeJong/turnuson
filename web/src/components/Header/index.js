@@ -9,13 +9,17 @@ import './index.scss'
 export default class Header extends Component {
     render() {
         return (
-            <div className="Header">
-                <div className="Header__image">
-                    <img src={Kerstboom} alt="Kerstboom"/>
-                </div>
-                <div className="Header__text">
-                    <LogoSvg/>
-                </div>
+            <div>
+                <section id="header">
+                    <div className="Header">
+                        <div className="Header__image">
+                            <img src={Kerstboom} alt="Kerstboom"/>
+                        </div>
+                        <div className="Header__text">
+                            <LogoSvg/>
+                        </div>
+                    </div>
+                </section>
             </div>
         )
     }

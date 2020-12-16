@@ -5,6 +5,8 @@ import TurnMeOn from '../components/TurnMeOn'
 
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Counter from '../components/Counter'
+import Header from '../components/Header'
 
 export default class MainComponent extends Component {
   async confirmEmail(){
@@ -26,6 +28,8 @@ export default class MainComponent extends Component {
   render() {
     return (
       <div className="MainComponent">
+        <Header/>
+        <Counter/>
         <Intro/>
         <TurnMeOn/>
         <ToastContainer
