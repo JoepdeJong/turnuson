@@ -38,7 +38,7 @@ class VisitorController extends Controller
         //     throw new DomainNotAllowedException('The given email domain is not allowed.', 405);
         // }
 
-        if(strpos("+", $email) !== false){
+        if(strpos($email, "+") !== false){
             throw new EmailFormatNotAllowedException('The given email does not match the required format.', 405);
         }
 
