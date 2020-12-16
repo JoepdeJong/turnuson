@@ -30,7 +30,7 @@ class ConfirmEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('confirm-email')->with([
+        return $this->subject('Confirm your light!')->view('confirm-email')->with([
             'code' => $this->code
         ]);
     }

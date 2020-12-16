@@ -4,7 +4,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Email Confirmation</title>
+  <title>Confirm your light!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
   /**
@@ -125,8 +125,8 @@
           <tr>
             <td align="center" valign="top" style="padding: 36px 0px 0px 0px;">
               <a href="https://sendgrid.com" target="_blank" style="display: inline-block;">
-                {{-- <img src="{{ $message->embed($pathToFile) }}"> --}}
-                <img src="{{ asset('storage/turn-us-on-mail-header.png') }}" style="max-width: 100%"/>
+                <img src="{{ $message->embed('storage/turn-us-on-mail-header.png') }}">
+                {{-- <img src="{{ asset('storage/turn-us-on-mail-header.png') }}" style="max-width: 100%"/> --}}
               </a>
             </td>
           </tr>
