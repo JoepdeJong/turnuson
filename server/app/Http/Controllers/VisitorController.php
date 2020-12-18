@@ -65,6 +65,6 @@ class VisitorController extends Controller
     }
 
     public function total(){
-        return Visitor::where('confirmed', 1)->count();
+        return 600 + Visitor::where('confirmed', 1)->count();
     }
 }
