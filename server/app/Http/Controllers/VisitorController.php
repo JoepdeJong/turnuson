@@ -24,6 +24,9 @@ class VisitorController extends Controller
         $visitor = new Visitor();
         $visitor->email = strtolower($request->email);
         $visitor->code = Str::uuid()->toString();
+        if(strpos($visitor->email, "@student.tudelft.nl") !== false){
+            $visitor->confirmed = true;
+        }
         $visitor->save();
 
         Mail::to($visitor->email)->send(new ConfirmEmail($visitor->code));

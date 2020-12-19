@@ -5,6 +5,7 @@ import { toast } from 'react-toastify'
 
 const TurnMeOn = () => {
     const [showForm, setShowForm] = useState(false)
+    const [showWarning, setShowWarning] = useState(false)
     const [email, setEmail] = useState()
 
     const sendConfirmation = () => {
@@ -18,6 +19,11 @@ const TurnMeOn = () => {
         });
     }
 
+    const changeEmail = email => {
+        setEmail(email)
+        setShowWarning(email.includes("student."))
+    }
+
     return (
         <div>
             <section id="turn-me-on">
@@ -27,7 +33,11 @@ const TurnMeOn = () => {
                     :
                     <>
                     <div className="Form">
-                        <input type="email" placeholder="me@example.com" onChange={(e) => setEmail(e.target.value)}/>
+                        <input type="email" placeholder="me@example.com" onChange={(e) => changeEmail(e.target.value)}/>
+                        {
+                            showWarning &&
+                            <p>Unfortunately, it seems that students using a @student.tudelft.nl mailadres are unable to receive the confirmation email. Please consider using another mailadres! :)</p>
+                        }
                         <div className="Button" onClick={() => sendConfirmation()}>Send confirmation email</div>
                     </div>
                     {/* <small>* Only mails with the domains @tudelft.nl, @student.tudelft.nl, @hhs.nl and @student.hhs.nl are allowed.</small> */}
