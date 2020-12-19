@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Counter from '../components/Counter'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default class MainComponent extends Component {
   async confirmEmail(){
@@ -32,6 +33,7 @@ export default class MainComponent extends Component {
         <Counter/>
         <Intro/>
         <TurnMeOn/>
+        <Footer/>
         <ToastContainer
           position="top-right"
           autoClose={5000}
