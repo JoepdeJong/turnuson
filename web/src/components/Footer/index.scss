@@ -1,4 +1,10 @@
 .Footer {
     border-top: 3px solid #ffffff;
     margin-top: 32px;
+    // display: flex;
+    // flex-direction: column;
+    video {
+        margin-top: 32px;
+        width: 100%;
+    }
 }
